@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist>
+	<array>
+		<dict>
+			<key>FacePart</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>FV_BeautyLiquify</string>
+          <key>LiquifyType</key>
+          <string>offset</string>
+					<key>BeautyLiquifyInfo</key>
+					<string>0.0116279,0.0116279,0.2,0.1,0,0,0,0,0</string>
+					<key>Radius</key>
+					<string>0.1</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</plist>

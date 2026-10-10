@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AnattaCoeffient</key>
+	<dict>
+		<key>BlurCoeffient</key>
+		<dict>
+			<key>Coeffient</key>
+			<dict>
+				<key>Male</key>
+				<string>0.6</string>
+				<key>Female</key>
+				<string>1.0</string>
+				<key>Child</key>
+				<string>1.0</string>
+			</dict>
+			<key>Delta</key>
+			<dict>
+				<key>Male</key>
+				<string>0</string>
+				<key>Female</key>
+				<string>0</string>
+				<key>Child</key>
+				<string>0</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,517 @@
+{
+  "document_link": "https://cf.meitu.com/confluence/pages/viewpage.action?pageId=220466036",
+  "save_advanced_enable": true,
+  "open_portrait_enable": true,
+  "portrait_manager_enable": true,
+  "key_frame_enable": true,
+  "combine_enable": false,
+  "group_reverse": false,
+  "default_tab_state": 1,
+  "tips_version": 14,
+  "mark": "每次更新二级菜单的sub_menu_sign_items或一级菜单的tip_info需要把tips_version修改为更大值",
+  "main_menu_edit_items": [
+    {
+      "menu": "VideoEditQuickFormula",
+      "mark": "视频编辑--一键大片",
+      "name": "video_edit__menu_formula",
+      "icon": "video_edit__ic_menu_quick_formula"
+    },
+    {
+      "menu": "VideoEditEdit",
+      "mark": "视频编辑--编辑",
+      "name": "video_edit__mainmenu_edit",
+      "icon": "video_edit_menu_edit"
+    },
+    {
+      "menu": "VideoEditFilter",
+      "mark": "视频编辑--滤镜",
+      "name": "video_edit__mainmenu_effect",
+      "icon": "video_edit_menu_filter",
+      "tip_info": {
+        "type": "1",
+        "stop_version": "8.1.0",
+        "no_scroll": true
+      }
+    },
+    {
+      "menu": "VideoEditTone",
+      "mark": "视频编辑--调色",
+      "name": "video_edit__tone",
+      "icon": "video_edit__tone",
+      "tip_info": {
+        "type": "1",
+        "stop_version": "7.3.0"
+      }
+    },
+    {
+      "menu": "Frame",
+      "mark": "视频编辑--边框",
+      "name": "video_edit__frame",
+      "icon": "video_edit_frame_icon"
+    },
+    {
+      "menu": "VideoEditStickerTimelineWord",
+      "mark": "视频编辑--文字",
+      "name": "video_edit__mainmenu_word",
+      "icon": "video_edit_menu_text",
+      "tip_info": {
+        "type": "1",
+        "stop_version": "8.3.0"
+      }
+    },
+    {
+      "menu": "VideoEditStickerTimelineSticker",
+      "mark": "视频编辑--贴纸",
+      "name": "video_edit__sticker",
+      "icon": "video_edit_menu_sticker",
+      "tip_info": {
+        "type": "1",
+        "text": "video_edit__sticker_tip",
+        "stop_version": "7.9.0",
+        "no_scroll": true
+      }
+    },
+    {
+      "menu": "Pip",
+      "mark": "视频编辑--画中画",
+      "name": "video_edit__mainmenu_pip",
+      "icon": "video_edit_menu_pip"
+    },
+    {
+      "menu": "VideoEditMusic",
+      "mark": "视频编辑--音频",
+      "name": "video_edit__menu_audio",
+      "icon": "video_edit_menu_music",
+      "tip_info": {
+        "type": "1",
+        "stop_version": "8.2.0",
+        "no_scroll": true
+      }
+    },
+    {
+      "menu": "VideoEditScene",
+      "mark": "视频编辑--特效",
+      "name": "meitu_app__video_edit_menu_scene",
+      "icon": "video_edit_menu_scene",
+      "tip_info": {
+        "type": "1",
+        "stop_version": "7.2.0"
+      }
+    },
+    {
+      "menu": "VideoEditMagnifier",
+      "mark": "视频编辑--放大镜",
+      "name": "video_edit__menu_magnifier",
+      "icon": "video_edit_menu_magnifier"
+    },
+    {
+      "menu": "VideoEditMosaic",
+      "mark": "视频编辑--马赛克",
+      "name": "video_edit__menu_mosaic",
+      "icon": "video_edit_menu_mosaic",
+      "tip_info": {
+        "type": "1",
+        "stop_version": "6.5.0"
+      }
+    },
+    {
+      "menu": "VideoEditCanvas",
+      "mark": "视频编辑--画布",
+      "name": "meitu_app__video_edit_menu_canvas",
+      "icon": "video_edit_menu_canvas"
+    }
+  ],
+  "main_menu_beauty_items": [
+    {
+      "menu": "VideoEditBeautyFormula",
+      "mark": "视频美容--美容配方",
+      "name": "video_edit__beauty_formula",
+      "icon": "video_edit_menu_beauty_formula"
+    },
+    {
+      "menu": "VideoEditBeautyAuto",
+      "mark": "视频美容--一键美颜",
+      "name": "video_edit__beauty_auto",
+      "icon": "video_edit_menu_beauty_suit"
+    },
+    {
+      "menu": "VideoEditBeautySkin",
+      "mark": "视频美容--美颜",
+      "name": "meitu_video_beauty_item_beauty",
+      "icon": "video_edit_menu_beauty_skin",
+      "vip_exclude_low_device": true,
+      "vip_flag": true,
+      "tip_info": {
+        "type": "1",
+        "stop_version": "6.0.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautySense",
+      "mark": "视频美容--精致五官",
+      "name": "video_edit__beauty_senses",
+      "icon": "video_edit_menu_beauty_senses",
+      "vip_flag": true,
+      "tip_info": {
+        "type": "3",
+        "text": "video_edit__beauty_face_smooth_shape_tip",
+        "stop_version": "9.2.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyMakeup",
+      "mark": "视频美容--美妆",
+      "name": "video_edit__makeup",
+      "icon": "video_edit_menu_beauty_makeup",
+      "tip_info": {
+        "type": "1",
+        "stop_version": "9.5.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyBody",
+      "mark": "视频美容--身材美型",
+      "name": "video_edit__beauty_body",
+      "icon": "video_edit_menu_beauty_body",
+      "vip_flag": true,
+      "tip_info": {
+        "type": "4",
+        "text": "video_edit__beauty_body_support_suit",
+        "icon": "video_edit__beauty_body_support_suit",
+        "stop_version": "9.7.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyHair",
+      "mark": "视频美容--美发",
+      "name": "video_edit__beauty_hair",
+      "icon": "video_edit_menu_beauty_hair",
+      "vip_flag": true,
+      "tip_info": {
+        "type": "3",
+        "text": "video_edit__beauty_hair_new_tips",
+        "stop_version": "6.8.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautySlimFace",
+      "mark": "视频美容--手动瘦脸",
+      "name": "video_edit__beauty_slim_face",
+      "icon": "video_edit_menu_beauty_slim_face",
+      "tip_info": {
+        "type": "3",
+        "text": "video_edit__beauty_slim_face_function_tip",
+        "stop_version": "8.2.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyBuffing",
+      "mark": "视频美容--磨皮",
+      "name": "video_edit__beauty_main_buffing",
+      "icon": "video_edit_menu_beauty_smooth",
+      "tip_info": {
+        "type": "1",
+        "text": "video_edit__beauty_buffing_auto_body_tip",
+        "stop_version": "7.6.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyColor",
+      "mark": "视频美容--美白",
+      "name": "video_edit__beauty_skin_color",
+      "icon": "video_edit_menu_beauty_color",
+      "tip_info": {
+        "type": "3",
+        "text": "video_edit__beauty_skin_color_tips",
+        "stop_version": "5.5.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyFillLight",
+      "mark": "视频美容--补光灯",
+      "name": "video_edit__beauty_fill_light",
+      "icon": "video_edit_menu_beauty_fill_light",
+      "tip_info": {
+        "type": "3",
+        "text": "video_edit__beauty_fill_light_manual_face_light_tip",
+        "stop_version": "8.9.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyAcne",
+      "mark": "视频美容--祛斑祛痘",
+      "name": "video_edit__beauty_acne",
+      "icon": "video_edit_menu_beauty_acne"
+    },
+    {
+      "menu": "VideoEditBeautyShiny",
+      "mark": "视频美容--去油光",
+      "name": "video_edit__beauty_shiny",
+      "icon": "video_edit_menu_beauty_shiny",
+      "tip_info": {
+        "type": "3",
+        "text": "video_edit__beauty_shiny_tip",
+        "stop_version": "7.1.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautySkinDetail",
+      "mark": "视频美容--皮肤细节",
+      "name": "video_edit__beauty_main_skin_detail",
+      "icon": "video_edit_menu_beauty_skin_detail",
+      "tip_info": {
+        "type": "3",
+        "text": "video_edit__beauty_skin_detail_tip",
+        "stop_version": "7.2.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyFiller",
+      "mark": "视频美容--面部丰盈",
+      "name": "video_edit__beauty_menu_filler",
+      "icon": "video_edit_menu_beauty_filler",
+      "vip_flag": true,
+      "tip_info": {
+        "type": "1",
+        "stop_version": "9.6.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyEye",
+      "mark": "视频美容--眼部精修",
+      "name": "video_edit__beauty_eye_brighten",
+      "icon": "video_edit_menu_beauty_eye_brighten",
+      "tip_info": {
+        "type": "3",
+        "text": "video_edit__beauty_eye_new_tips",
+        "stop_version": "8.5.0"
+      }
+    },
+    {
+      "menu": "VideoEditBeautyStereo",
+      "mark": "视频美容--五官立体",
+      "name": "video_edit__beauty_menu_stereo",
+      "icon": "video_edit_menu_beauty_stereo"
+    },
+    {
+      "menu": "VideoEditBeautyTooth",
+      "mark": "视频美容--白牙",
+      "name": "meitu_app__video_edit_beauty_tooth_white",
+      "icon": "video_edit_menu_beauty_teeth",
+      "tip_info": {
+        "type": "3",
+        "text": "video_edit__beauty_teeth_new_tips",
+        "stop_version": "7.0.0"
+      }
+    }
+  ],
+  "sub_menu_sign_items": [
+    {
+      "status_key": "MENU_BATCH_TEXT",
+      "menu_name": "视频剪辑--字幕--批量文本",
+      "stop_version": "5.5.0"
+    },
+    {
+      "status_key": "MENU_BATCH_ALIGN",
+      "menu_name": "视频剪辑--字幕--批量对齐",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_SUBTITLE",
+      "menu_name": "视频剪辑--字幕",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_MUSIC_IMPORT_MUSIC",
+      "menu_name": "视频剪辑--导入音乐",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_VIDEO_QUALITY",
+      "menu_name": "视频剪辑--画质修复",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_VIDEO_CROP",
+      "menu_name": "视频剪辑--裁剪",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_RECOGNIZER",
+      "menu_name": "视频剪辑--智能识别文字",
+      "stop_version": "7.3.0"
+    },
+    {
+      "status_key": "MENU_REDUCE_SHAKE",
+      "menu_name": "视频剪辑--防抖",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_MAGIC",
+      "menu_name": "视频剪辑--魔法照片",
+      "stop_version": "7.0.0",
+      "disable_auto_scroll": true
+    },
+    {
+      "status_key": "QUICK_FORMULA_FIRST_COLLECT",
+      "menu_name": "视频剪辑--一键大片首次收藏",
+      "stop_version": "9999.9999.9999"
+    },
+    {
+      "status_key": "QUICK_FORMULA_COLLECT_TIPS",
+      "menu_name": "视频剪辑--一键大片收藏TIPS",
+      "stop_version": "9999.9999.9999"
+    },
+    {
+      "status_key": "MENU_READ_TEXT",
+      "menu_name": "视频剪辑--文本朗读",
+      "stop_version": "7.9.0"
+    },
+    {
+      "status_key": "MENU_CHANGE_TONE",
+      "menu_name": "视频剪辑--换音色",
+      "stop_version": "2.9.0"
+    },
+    {
+      "status_key": "MENU_MASK_360",
+      "menu_name": "视频剪辑--蒙版",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_TEXT_MIXED",
+      "menu_name": "视频剪辑--文字（字幕）混合模式",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_STICKER_ALPHA",
+      "menu_name": "视频剪辑--贴纸透明度",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_STICKER_MIXED",
+      "menu_name": "视频剪辑--贴纸混合模式",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_SOUND_DETECTION",
+      "menu_name": "视频剪辑--无声检测",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "CHROMA_MATTING",
+      "menu_name": "视频剪辑--色度抠图",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "SUPPORT_SAVE_GIF",
+      "menu_name": "视频剪辑--支持导出 gif",
+      "stop_version": "9999.9999.9999"
+    },
+    {
+      "status_key": "MENU_ELIMINATE_WATERMARK",
+      "menu_name": "视频剪辑--消除水印",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_MASK_TEXT_360",
+      "menu_name": "视频剪辑--文字蒙版",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_TONE_HSL",
+      "menu_name": "视频剪辑--调色--hsl",
+      "stop_version": "6.9.0",
+      "disable_auto_scroll": true
+    },
+    {
+      "status_key": "MENU_TONE_PARTICLE",
+      "menu_name": "视频剪辑--调色--颗粒",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "VIDEO_EDIT_FILL_FRAME_DIALOG",
+      "menu_name": "视频剪辑--视频补帧-引导弹窗",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_AUDIO_RECORD",
+      "menu_name": "视频剪辑--录音功能",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_TONE_LIGHT_SENSATION",
+      "menu_name": "视频剪辑--调色--光感",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_MUSIC_SPEED",
+      "menu_name": "视频剪辑--音频变速",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "MENU_SCENE_ADJUSTMENT",
+      "menu_name": "视频剪辑--特效--参数调整",
+      "stop_version": "5.1.1"
+    },
+    {
+      "status_key": "MENU_STICKER_TRACING",
+      "menu_name": "视频剪辑--文字贴纸-素材跟踪",
+      "stop_version": "4.5.1"
+    },
+    {
+      "status_key": "MENU_AR_STICKER",
+      "menu_name": "视频剪辑--贴纸-AR 贴纸",
+      "stop_version": "7.9.0"
+    },
+    {
+      "status_key": "MENU_HUMAN_CUTOUT",
+      "menu_name": "视频剪辑--智能抠像",
+      "stop_version": "4.5.1"
+    },
+    {
+      "status_key": "MENU_VIDEO_EDIT_BEAUTY_ACNE_DIALOG",
+      "menu_name": "视频美容--祛斑祛痘弹窗",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "BEAUTY_BRIGHT_EYE",
+      "menu_name": "视频美容--亮眼",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "BEAUTY_FACE_SMOOTH_SHAPE",
+      "menu_name": "视频美容--精致五官--面部-脸型流畅",
+      "stop_version": "9.2.0"
+    },
+    {
+      "status_key": "BEAUTY_FACE_MLIP_MOUTH",
+      "menu_name": "视频美容--精致五官--M唇",
+      "stop_version": "4.2.0"
+    },
+    {
+      "status_key": "BEAUTY_FACE_ABUNDANT_MOUTH",
+      "menu_name": "视频美容--精致五官--丰唇",
+      "stop_version": "6.7.0"
+    },
+    {
+      "status_key": "BEAUTY_SENSE_FACE_SCOPE_TIPS",
+      "menu_name": "视频美容--精致五官--支持左右脸调节提示",
+      "stop_version": "6.7.0"
+    },
+    {
+      "status_key": "MENU_BEAUTY_BODY_LONG_LEG",
+      "menu_name": "视频美容--身材美型-长腿",
+      "stop_version": "5.1.1"
+    },
+    {
+      "status_key": "MENU_BEAUTY_BODY_LONG_LEG_TRUE",
+      "menu_name": "视频美容--身材美型-长腿（单功能）",
+      "stop_version": "5.1.1"
+    },
+    {
+      "status_key": "MENU_AUDIO_DENOISE",
+      "menu_name": "视频剪辑--音频降噪",
+      "stop_version": "8.2.0"
+    }
+  ]
+}

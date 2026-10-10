@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ID</key>
+	<integer>1001</integer>
+	<key>FilterPart</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>AnattaBeauty</string>
+			<key>Filters</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>SourceInput</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>DLFaceContourSmooth</string>
+					<key>ModelType</key>
+					<string>1</string>
+					<key>FromSource</key>
+					<array>
+						<string>SourceInput</string>
+					</array>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>ResultOutput</string>
+					<key>FromSource</key>
+					<array>
+						<string>DLFaceContourSmooth</string>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

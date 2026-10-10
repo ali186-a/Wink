@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>EnvironmentAlphaAdjustParameters</key>
+        <dict>
+            <!-- 此版本优化是HSL版本，也就是开启3 -->
+            <!-- 是否开启逆光算法调整，默认0关闭，1是非ISO版本，2是优化后的ISO版本。3是HSL版本 -->
+            <key>EnvironmentAlphaAdjust</key><!-- 总开关 -->
+            <integer>3</integer>
+            <key>AdjustDegree</key><!-- 调节程度 -->
+            <string>1.00</string>
+            <key>ControlCapture</key><!-- 控制拍照帧是否开启环境自适应计算 value：1（内部计算）：0（外部设置，为了拍照预览效果一致） -->
+            <integer>1</integer>
+        </dict>
+    </dict>
+    <dict>
+        <key>LipstickSmoothParameters</key>
+        <dict>
+        <!--
+        唇彩模式定义【对应配置文件中<key>LipstickMode</key>的数值】【例如唇彩配置文件中的含有<key>LipstickMode</key><integer>1</integer>，则表示该唇彩为缎面，如果改为7则是砖石】
+        typedef enum LipstickMode
+        {
+            LipstickMode_Matte = 0,         //哑光
+            LipstickMode_Satin = 1,         //缎面
+            LipstickMode_Moist = 2,         //润泽
+            LipstickMode_Hightlight = 3,    //高光
+            LipstickMode_Pearl = 4,         //珠光
+            LipstickMode_Metallight = 5,    //金属光
+            LipstickMode_BittenLips = 6,    //咬唇
+            LipstickMode_Diamond = 7,       //💎钻石
+        }LipstickMode;
+        下面每个参数则是对应调节上面唇彩模式的羽化程度
+        -->
+            <key>Matte</key>
+            <integer>10</integer>
+            <key>Satin</key>
+            <integer>10</integer>
+            <key>Moist</key>
+            <integer>10</integer>
+            <key>Hightlight</key>
+            <integer>10</integer>
+            <key>Pearl</key>
+            <integer>10</integer>
+            <key>Metallight</key>
+            <integer>10</integer>
+            <key>BittenLips</key>
+            <integer>10</integer>
+            <key>Diamond</key>
+            <integer>10</integer>
+            <!-- 是否开启逆光算法调整，默认0关闭，非0开启 -->
+            <key>BackLightAlpha</key>
+            <integer>1</integer>
+            <!-- 是否开启不同环境下的妆容适应 -->
+            <key>DiffEnvMouth</key>
+            <integer>1</integer>
+            <!-- 是否开启美妆唇彩优化，默认0关闭，非0开启 -->
+            <key>LipstickOptimized</key>
+            <integer>1</integer>
+            <!-- 是否开启唇彩的填充优化，默认0关闭，非0开启 -->
+            <key>MaskFillType</key>
+            <integer>1</integer>
+            <!-- 是否使用人脸检测点直接填充牙齿mask，默认0关闭，非0开启 -->
+            <key>TeethMaskUseFD</key>
+            <integer>0</integer>
+            <!-- 素材唇彩是否强制使用分割 -->
+            <key>ForceStaticMouthType7to8</key>
+            <integer>1</integer>
+            <!-- 基准图唇彩是否强制使用分割 -->
+            <key>ForceStaticMouthType0to6</key>
+            <integer>1</integer>
+        </dict>
+    </dict>
+
+    <dict>
+        <!-- 替换标准模特人脸点 -->
+        <key>ReplaceStdFacePoints</key>
+        <dict>
+            <!-- 人脸库版本 -->
+            <key>FaceDetectorVersion</key>
+            <string>4.5.9.4</string>
+            <!-- 替换模特点的总开关，0表示关闭，1表示开启 -->
+            <key>ReplaceModel</key>
+            <integer>1</integer>
+            <!-- 模特尺寸，目前固定为宽是1000,高是1500 -->
+            <key>ModelImageSize</key>
+            <string>1000,1500</string>
+            <!-- 标准模特检测出来的118人脸点，由人脸组提供，目前使用图片检测得到的点 -->
+            <key>ModelFacePoints118</key>
+            <string>184.44,528.9,184.98,568.826,187.956,608.318,193.769,647.574,202.458,686.594,212.925,724.955,224.198,763.062,238.208,800.45,256.318,836.283,278.238,869.584,303.345,900.592,331.06,929.397,360.7,955.995,391.575,981.086,424.36,1002.94,461.392,1017.72,502.269,1022.49,542.362,1017.36,578.716,1002.69,611.115,981.091,641.789,956.206,670.722,929.279,697.106,899.848,720.359,867.958,740.031,833.571,755.87,796.684,767.811,758.698,777.985,720.711,788.098,682.473,796.625,643.543,802.177,604.127,804.521,564.41,804.097,524.403,254.474,476.828,294.804,450.066,342.25,448.146,389.282,455.799,432.556,469.782,426.242,494.495,384.355,484.163,339.872,476.418,295.682,474.62,571.076,464.817,613.98,449.901,660.533,441.752,707.532,444.345,746.622,472.671,706.09,469.032,662.607,470.482,618.962,478.609,577.753,489.755,291.532,552.93,321.613,534.05,359.034,527.123,394.806,537.348,417.506,564.552,387.452,574.495,353.489,578.814,319.986,569.297,361.629,548.876,358.968,550.946,584.298,567.04,606.871,538.691,642.16,527.775,679.271,533.805,709.097,551.896,682.207,568.942,649.228,578.255,615.242,574.528,642.925,547.489,644.075,549.04,503.126,540.825,503.147,598.73,503.154,656.592,503.24,713.72,458.494,557.523,448.972,691.481,427.089,735.342,449.274,761.937,467.887,748.324,503.404,764.37,538.428,748.657,557.449,761.388,578.386,735.582,556.331,691.809,547.082,556.872,404.777,845.554,439.716,834.848,476.296,824.063,501.769,830.65,527.501,824.747,565.813,835.334,601.206,846.96,576.411,872.976,543.37,890.857,501.98,894.941,461.715,889.882,429.074,871.911,417.676,848.198,445.794,850.03,501.633,853.302,559.849,851.49,588.261,849.363,560,852.183,501.608,854.317,444.951,850.361,475.348,849.929,527.81,850.696,473.604,851.69,530.458,852.698,422.199,840.298,457.109,828.608,547.486,829.639,583.416,841.524,334.845,548.064,387.214,550.619,618.222,549.153,668.336,547.244</string>
+
+            <!-- 5.0新版本，人脸检测库输出标准模特130人脸点，由人脸组提供，目前使用图片检测得到的点 -->
+            <!-- <key>ModelFacePoints130</key>
+            <string>todo:跟人脸组件获取点位信息</string> -->
+
+            <!-- 是否替换所有部位(此开关优先级高于各单部位开关)，默认为0表示关闭，按需使用 -->
+            <key>ReplaceAllPoints</key>
+            <integer>0</integer>
+
+            <!-- 单个部位的独立替换开关，0表示关闭，1表示开启 -->
+            <key>ReplaceMouthPoints</key>
+            <integer>1</integer><!-- 替换嘴巴点：http://cf.meitu.com/confluence/pages/viewpage.action?pageId=110137886 -->
+
+
+            <!-- 后续其它部位开关可按需添加 -->
+        </dict>
+    </dict>
+    <dict>
+        <key>MakeupSideFaceOptimize</key>
+        <dict>
+            <key>SideFaceOptimizeGlobal</key><!-- 总开关 -->
+            <integer>1</integer>
+        </dict>
+    </dict>
+</array>
+</plist>

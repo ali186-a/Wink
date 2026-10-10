@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>未命名文件夹</string>
+		<key>AI</key>
+		<array>
+			<string>ai/configuration.json</string>
+		</array>
+		<key>CustomParamDict</key>
+		<dict>
+			<key>EyelidRealtimeModelType</key>
+			<integer>-1</integer>
+		</dict>
+		<key>SpecialFacelift</key>
+		<integer>1</integer>
+		<key>IsNeedResetSound</key>
+		<integer>0</integer>
+		<key>EnableReplaceSpecialFacelift</key>
+		<integer>0</integer>
+		<key>FacePart</key>
+		<array>
+		
+			<dict>
+				<key>Type</key>
+				<string>FluffyHairFacelift</string>
+				<key>Degree</key>
+				<string>1,0.7,0,0,0,0</string>
+				<key>EnableSideFaceWeaken</key>
+				<integer>1</integer>
+				<key>EnableHairDynamicSubDiv</key>
+				<integer>1</integer>
+				<key>EnableRefineForeheadCenterPoint</key>
+				<integer>1</integer>
+				<key>ExtendTopHeadPointCoef</key>
+				<string>0.50</string>
+				<key>ScaleArrayWeight</key>
+				<string>0.35</string>
+				<key>MaxSliderDegreeLimit</key>
+				<string>0.7</string>
+				<key>DisappearGradualTime</key>
+				<string>500</string>
+				<key>AppearGradualTime</key>
+				<string>500</string>
+				<key>ID</key>
+				<string>105553124662848</string>
+				<key>Name</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,42 @@
+material showTexture 
+{
+    u_worldViewProjectionMatrix = WORLD_VIEW_PROJECTION_MATRIX
+
+	renderState 
+	{
+		depthTest = false 
+		blend = false 
+		blendSrc = ZERO
+		blendDst = ONE
+	}
+	technique 
+	{
+		pass 
+		{
+			resourcePath = true
+			vertexShader = shaders/texture.vert
+			fragmentShader = shaders/texture.frag
+		}
+	}
+}
+material TextureMask 
+{
+
+	renderState 
+	{
+		depthTest = false 
+		blend = false 
+		blendSrc = ZERO
+		blendDst = ONE
+	}
+	technique 
+	{
+		pass 
+		{
+			resourcePath = true
+			vertexShader = shaders/texture.vert
+			fragmentShader = shaders/texture.frag
+			defines = MASK
+		}
+	}
+}

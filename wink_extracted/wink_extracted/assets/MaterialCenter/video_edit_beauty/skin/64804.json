@@ -1,0 +1,67 @@
+[
+    {
+        "name": "conceal",
+        "value": 0.8,
+        "platform": {
+            "default": 1,
+            "ios": 1,
+            "android": 1
+        },
+        "params": [
+            {
+                "param": "acneCleanAlpha",
+                "coefficient": 1
+            }
+        ]
+    },
+    {
+        "name": "skinDetail",
+        "value": 0.6,
+        "platform": {
+            "default": 1,
+            "ios": 1,
+            "android": 1
+        },
+        "params": [
+            {
+                "param": "sharpenEyeAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "eyeshadowDeepenAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "lipstickDeepenAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "facialDeepenAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "eyebrowDeepenAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "detailShadowAlpha",
+                "coefficient": 1
+            }
+        ]
+    },
+    {
+        "name": "textureBlend",
+        "value": 0.65,
+        "platform": {
+            "default": 1,
+            "ios": 1,
+            "android": 1
+        },
+        "params": [
+            {
+                "param": "textureBlendAlpha",
+                "coefficient": 2
+            }
+        ]
+    }
+]

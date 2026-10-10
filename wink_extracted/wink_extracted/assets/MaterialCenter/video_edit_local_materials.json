@@ -1,0 +1,23 @@
+{
+  "categories": [
+    {
+      "name": "文字-基础",
+      "category_id": 6050,
+      "sub_categories": [
+        {
+          "sub_category_id": 6050000,
+          "items": [
+            {
+              "material_id": 605099999,
+              "sort": 99999999
+            },
+            {
+              "material_id": 605088888,
+              "sort": 99999999
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

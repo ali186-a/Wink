@@ -1,0 +1,170 @@
+material phong
+{
+    model = WORLD_MATRIX
+    normalMatrix = INVERSE_TRANSPOSE_WORLD_MATRIX
+
+    u_directionLightDirection[0] = -0.0,0.0,-1.0
+    u_directionLightColor[0] = 1.0,1.0,1.0,1.0
+    // u_pointLightPosition[0] = -0.5, -0.0, -0.0
+    // u_pointLightColor[0] = 0.0,0.0,1.0,1.0
+    // u_pointLightPosition[1] = -0.5, -0.0, -0.0
+    // u_pointLightColor[1] = 1.0,0.0,0.0,1.0
+
+
+    u_directionLightIntensity = 1.0
+    u_testPower = 0.0
+
+    u_specularGlossy = 2.0
+    u_specularDegree = 1.0
+    
+    sampler u_normalTexture
+    {
+        path = texture/merge_normal_blur.png
+        mipmap = false
+        wrapS = CLAMP
+        wrapT = CLAMP
+        minFilter = LINEAR
+        magFilter = LINEAR
+    }
+
+    sampler u_diffuseTexture
+    {
+        path = ../texture/mask.png
+        mipmap = false
+        wrapS = CLAMP
+        wrapT = CLAMP
+        minFilter = LINEAR
+        magFilter = LINEAR
+    }
+
+    renderState
+    {
+        depthTest = true
+        blend = true
+        blendSrc = SRC_ALPHA
+        blendDst = ONE_MINUS_SRC_ALPHA
+    }
+    
+    technique
+    {
+        pass 
+        {
+            resourcePath = true
+            vertexShader = phong.vs
+            fragmentShader = phong.fs
+            defines = DIRECTION_LIGHT_NUM 5;POINT_LIGHT_NUM 0;NEED_NORMAL
+        }
+    }
+}
+
+
+material phong_relight
+{
+    model = WORLD_MATRIX
+    normalMatrix = INVERSE_TRANSPOSE_WORLD_MATRIX
+
+    u_directionLightDirection[0] = -0.0,0.0,-1.0
+    u_directionLightColor[0] = 1.0,1.0,1.0,1.0
+
+    u_directionLightIntensity = 1.0
+
+    u_specularGlossy = 2.0
+    u_specularDegree = 1.0
+    
+    sampler u_normalTexture
+    {
+        path = texture/merge_normal_blur.png
+        mipmap = false
+        wrapS = CLAMP
+        wrapT = CLAMP
+        minFilter = LINEAR
+        magFilter = LINEAR
+    }
+
+    sampler u_diffuseTexture
+    {
+        path = texture/mask.png
+        mipmap = false
+        wrapS = CLAMP
+        wrapT = CLAMP
+        minFilter = LINEAR
+        magFilter = LINEAR
+    }
+
+    renderState
+    {
+        depthTest = true
+        blend = true
+        blendSrc = SRC_ALPHA
+        blendDst = ONE_MINUS_SRC_ALPHA
+    }
+    
+    technique
+    {
+        pass 
+        {
+            resourcePath = true
+            vertexShader = relight.vs
+            fragmentShader = relight.fs
+            defines = DIRECTION_LIGHT_NUM 5
+        }
+    }
+}
+
+material normalMap
+{
+    normalMatrix = INVERSE_TRANSPOSE_WORLD_MATRIX
+    
+    sampler u_normalTexture
+    {
+        path = texture/merge_normal_blur.png
+        mipmap = false
+        wrapS = CLAMP
+        wrapT = CLAMP
+        minFilter = LINEAR
+        magFilter = LINEAR
+    }
+
+    renderState
+    {
+        depthTest = true
+        blend = false
+        blendSrc = SRC_ALPHA
+        blendDst = ONE_MINUS_SRC_ALPHA
+    }
+    
+    technique
+    {
+        pass 
+        {
+            resourcePath = true
+            vertexShader = normalMap.vs
+            fragmentShader = normalMap.fs
+        }
+    }
+}
+
+material phongPost
+{
+    u_directionLightDirection[0] = -0.0,0.0,-1.0
+    u_directionLightColor[0] = 1.0,1.0,1.0,1.0
+
+    renderState
+    {
+        depthTest = true
+        blend = true
+        blendSrc = SRC_ALPHA
+        blendDst = ONE_MINUS_SRC_ALPHA
+    }
+    
+    technique
+    {
+        pass 
+        {
+            resourcePath = true
+            vertexShader = phongPost.vs
+            fragmentShader = phongPost.fs
+            defines = DIRECTION_LIGHT_NUM 5
+        }
+    }
+}

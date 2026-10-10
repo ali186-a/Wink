@@ -1,0 +1,55 @@
+{
+    "Bronzers": [
+        {
+            "ui_name" : "额头",
+            "ui_name_en" : "forehead",
+            "ui_name_tw" : "额头（繁体）",
+            "CustomName": "Bronzer_forehead",
+            "alpha": "0.64"
+        },
+        {
+            "ui_name" : "眉毛",
+            "ui_name_en" : "eyebrow",
+            "ui_name_tw" : "眉毛（繁体）",
+            "CustomName": "Bronzer_eyebrow",
+            "alpha": "0.64"
+        },
+        {
+            "ui_name" : "鼻子",
+            "ui_name_en" : "nose",
+            "ui_name_tw" : "鼻子（繁体）",
+            "CustomName": "Bronzer_nose",
+            "alpha": "0.64"
+        },
+        {
+            "ui_name" : "脸颊",
+            "ui_name_en" : "forehead",
+            "ui_name_tw" : "脸颊（繁体）",
+            "CustomName": "Bronzer_cheek",
+            "alpha": "0.64"
+        },
+        {
+            "ui_name" : "嘴巴",
+            "ui_name_en" : "mouth",
+            "ui_name_tw" : "嘴巴（繁体）",
+            "CustomName": "Bronzer_mouth",
+            "alpha": "0.64"
+        },
+        {
+            "ui_name" : "下巴",
+            "ui_name_en" : "chin",
+            "ui_name_tw" : "下巴（繁体）",
+            "CustomName": "Bronzer_chin",
+            "alpha": "0.64"
+        },
+        {
+            "ui_name" : "下颌",
+            "ui_name_en" : "lower_jaw",
+            "ui_name_tw" : "下颌（繁体）",
+            "CustomName": "Bronzer_lower_jaw",
+            "alpha": "0.64"
+        }
+
+       
+    ]
+}

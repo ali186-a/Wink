@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Fantastic beam Star</string>
+		<key>ID</key>
+		<integer>500395</integer>
+		<key>Action</key>
+		<integer>0</integer>
+		<key>Sound</key>
+		<integer>0</integer>
+		<key>FacePart</key>
+		<array>
+			<dict>
+				<key>Type</key>
+				<string>Script</string>
+				<key>ScriptPath</key>
+				<string>bundle/script.lua</string>
+				<key>UIPath</key>
+				<string>bundle/script_ui.lua</string>
+				<key>ParamTableType</key>
+				<string>MVAR</string>
+				<key>EnableFace</key>
+				<string>0</string>
+				<key>SegmentType</key>
+				<string>22</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

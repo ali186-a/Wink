@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>FacePart</key>
+		<array>
+			<dict>
+				<key>enableCallback</key>
+				<integer>0</integer>
+				<key>state</key>
+				<integer>48</integer>
+				<key>ModeTypeSwitch</key>
+				<string>0211111111</string>
+				<key>waistRadius</key>
+				<real>0.8</real>
+				<key>waistDegree</key>
+				<real>0.3</real>
+				<key>BodyDegree</key>
+				<real>1.25</real>
+				<key>handDegree</key>
+				<real>0.18</real>
+				<key>Type</key>
+				<string>SlimV2</string>
+				<key>lengthenBodyParameters</key>
+				<string>1,1.255,1,1.255,1,1,1,1</string>
+				<key>LegDegree</key>
+				<string>1.0</string>
+				<key>ChestDegree</key>
+				<string>1.0</string>
+				<key>HipDegree</key>
+				<string>1.0</string>
+				<!-- 直角肩滑杆参数 -->
+				<key>ShoulderDegree</key>
+				<string>1.0</string>
+				<!-- 打印点 -->
+				<key>Debug</key>
+				<string>0</string>
+				<!-- 是否打印肩膀控制点 -->
+				<key>ShoulderDebugPoint</key>
+				<string>0</string>
+				<!-- 直角肩边缘两点(2,3)旋转角度调节，值为增加的角度，大于0内缩，小于0外扩 -->
+				<key>ShoulderRotateParameters</key>
+				<string> 75.0, 75.0 </string>
+				<!-- 直角肩各点力度系数(已镜像)，注意图中对应点 -->
+				<key>ShoulderPointParameters</key>
+				<string> 0.0, 0.6, 0.6, 0.0, 0.0 </string>
+				<!-- 笔刷半径大小 -->
+				<key>ShoulderBrushRadius</key>
+				<string>5.5</string>
+				<!-- 肩膀点外扩系数 -->
+				<key>ShoulderExtendLength</key>
+				<string>1.0</string>
+				<!-- 默认直角肩滑杆参数，建议和直角肩滑杆参数一致 -->
+				<key>DefaultsSlimShoulderDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimDegree</key>
+				<string>0.0</string>
+				<key>DefaultsShrinkHeadDegree</key>
+				<string>0.0</string>
+				<key>DefaultsLengthenDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimHandDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimWaistDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimLegDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimChestDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimHipDegree</key>
+				<string>0.0</string>
+			</dict>
+			<dict>
+				<key>Type</key>
+				<string>FV_ShoulderMLS</string>
+				<key>ShapeConfigure</key>
+				<array />
+				<key>Radius</key>
+				<string>155.00</string>
+				<key>EffectRegion</key>
+				<string>0.15</string>
+				<key>Degree</key>
+				<string>15.00</string>
+				<key>IsWink</key>
+				<string>1.00</string>
+				<key>Mirror</key>
+				<string>1.00</string>
+				<key>DebugPoint</key>
+				<string>0.00</string>
+				<key>ModeType</key>
+				<integer>1</integer>
+				<key>ControlDstPoints</key>
+				<string>293.602,1112.21,226.811,1142.49,117.235,1153.27,42.271,1181.44,267.992,994.646,206.382,879.085,350.212,1137.77,388.822,1213.33,183.552,1006.92,150.294,912.356,245.07,1182.06,277.328,1271.62,66.285,1063.91,64.335,961.542,146.184,1217.64,176.134,1308,64.2212,1244.8,94.171,1335.17,4.32169,1064.07,-18.63,998.707,373.393,991.93,336.783,916.365,399.003,1076.49,706.398,1112.21,773.189,1142.49,882.765,1153.27,957.729,1181.44,732.008,994.646,793.618,879.085,649.788,1137.77,611.178,1213.33,816.448,1006.92,849.706,912.356,754.93,1182.06,722.672,1271.62,933.715,1063.91,935.665,961.542,853.816,1217.64,823.866,1308,935.779,1244.8,905.829,1335.17,995.678,1064.07,1018.63,998.707,626.607,991.93,663.217,916.365,600.997,1076.49</string>
+				<key>ControlSrcPoints</key>
+				<string>297.602,1046.21,212.811,1092.49,116.235,1127.27,34.2715,1154.44,251.992,962.646,206.382,879.085,343.212,1129.77,388.822,1213.33,180.552,1002.92,148.294,913.356,245.07,1182.06,277.328,1271.62,86.2848,1036.91,56.3351,946.542,146.184,1217.64,176.134,1308,64.2212,1244.8,94.171,1335.17,4.32169,1064.07,-25.6281,973.707,382.393,999.927,336.783,916.365,428.003,1083.49,702.398,1046.21,787.189,1092.49,883.765,1127.27,965.729,1154.44,748.008,962.646,793.618,879.085,656.788,1129.77,611.178,1213.33,819.448,1002.92,851.706,913.356,754.93,1182.06,722.672,1271.62,913.715,1036.91,943.665,946.542,853.816,1217.64,823.866,1308,935.779,1244.8,905.829,1335.17,995.678,1064.07,1025.63,973.707,617.607,999.927,663.217,916.365,571.997,1083.49</string>
+				<key>Path</key>
+				<string>StandFaceMask28.png</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

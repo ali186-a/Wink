@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>fluidFilter</string>
+		<key>ID</key>
+		<real>110768</real>
+		<key>Action</key>
+		<integer>0</integer>
+		<key>Sound</key>
+		<integer>0</integer>
+		<key>FacePart</key>
+		<array>
+			<dict>
+				<key>ScriptPath</key>
+				<string>fluidFilter.lua</string>
+				<key>Type</key>
+				<string>Script</string>
+				<key>MessageType</key>
+				<string>FLUIDFILTER</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

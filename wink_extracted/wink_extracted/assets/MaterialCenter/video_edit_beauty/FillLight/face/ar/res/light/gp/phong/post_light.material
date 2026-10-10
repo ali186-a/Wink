@@ -1,0 +1,20 @@
+material post_light
+{
+    renderState
+    {
+        depthTest = true
+        blend = true
+        blendSrc = SRC_ALPHA
+        blendDst = ONE_MINUS_SRC_ALPHA
+    }
+    
+    technique
+    {
+        pass 
+        {
+            resourcePath = true
+            vertexShader = post_light.vs
+            fragmentShader = post_light.fs
+        }
+    }
+}

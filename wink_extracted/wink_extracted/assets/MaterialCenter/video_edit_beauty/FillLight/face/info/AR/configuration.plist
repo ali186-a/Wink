@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string></string>
+			<key>IconPath</key>
+			<string>AR</string>
+			<key>ShowStr</key>
+			<string></string>
+			<key>FontColorRed</key>
+			<integer>255</integer>
+			<key>FontColorGreen</key>
+			<integer>255</integer>
+			<key>FontColorBlue</key>
+			<integer>255</integer>
+			<key>FontType</key>
+			<integer>0</integer>
+			<key>FontAlignment</key>
+			<integer>0</integer>
+			<key>PreviewPath</key>
+			<string>AR</string>
+			<key>Description</key>
+			<string></string>
+			<key>CategoryName</key>
+			<string></string>
+			<key>TipType</key>
+			<string>default</string>
+			<key>Tips</key>
+			<dict />
+			<key>OnlineName</key>
+			<string></string>
+			<key>ProductIdList</key>
+			<string></string>
+			<key>TagList</key>
+			<string></string>
+			<key>RaceId</key>
+			<string>-999</string>
+		</dict>
+	</array>
+</plist>

@@ -1,0 +1,24 @@
+material phongPost
+{
+    u_directionLightDirection[0] = -0.0,0.0,-1.0
+    u_directionLightColor[0] = 1.0,1.0,1.0,1.0
+
+    renderState
+    {
+        depthTest = true
+        blend = true
+        blendSrc = SRC_ALPHA
+        blendDst = ONE_MINUS_SRC_ALPHA
+    }
+    
+    technique
+    {
+        pass 
+        {
+            resourcePath = true
+            vertexShader = phongPost.vs
+            fragmentShader = phongPost.fs
+            defines = DIRECTION_LIGHT_NUM 5
+        }
+    }
+}

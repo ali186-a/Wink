@@ -1,0 +1,75 @@
+{
+  "beauty_version": "126",
+  "beauty_configuration": "NewBeauty/configuration.plist",
+  "beauty_hair_fluffy_configuration": "fluffyhair/configuration.plist",
+  "beauty_face_configuration": "faceLift/configuration.plist",
+  "beauty_face_smooth_shape_configuration": "faceLift/smoothShape/configuration.plist",
+  "beauty_body_configuration": "body/configuration.plist",
+  "beauty_manual_body_configuration": "manualBody/configuration.plist",
+  "beauty_liquefy_configuration": "BeautyLiquify/configuration.plist",
+  "beauty_blur_value": 50,
+  "beauty_facecolor_value": 50,
+  "face_list": [
+    {
+      "face_id": 62149,
+      "face_name": "origin",
+      "face_cn_name": "原始",
+      "configPath": "faceLift/origin/config.json",
+      "configuration": "faceLift/ar/configuration.plist"
+    },
+    {
+      "face_id": 62107,
+      "face_name": "round",
+      "face_cn_name": "圆脸",
+      "configPath": "faceLift/round/config.json",
+      "configuration": "faceLift/ar/configuration.plist"
+    },
+    {
+      "face_id": 62108,
+      "face_name": "square",
+      "face_cn_name": "方脸",
+      "configPath": "faceLift/square/config.json",
+      "configuration": "faceLift/ar/configuration.plist"
+    },
+    {
+      "face_id": 62109,
+      "face_name": "long",
+      "face_cn_name": "长脸",
+      "configPath": "faceLift/long/config.json",
+      "configuration": "faceLift/ar/configuration.plist"
+    },
+    {
+      "face_id": 62110,
+      "face_name": "short",
+      "face_cn_name": "短脸",
+      "configPath": "faceLift/short/config.json",
+      "configuration": "faceLift/ar/configuration.plist"
+    }
+  ],
+  "skin_type_list": [
+    {
+      "name": "原肤质",
+      "skin_type_id": 64804,
+      "configPath": "skin/64804.json",
+      "configPath_high": "skin/64804_high.json"
+    },
+    {
+      "name": "奶油肌",
+      "skin_type_id": 64805,
+      "configPath": "skin/64805.json",
+      "configPath_high": "skin/64805_high.json"
+    },
+    {
+      "name": "水光肌",
+      "skin_type_id": 64806,
+      "configPath": "skin/64806.json",
+      "configPath_high": "skin/64806_high.json"
+    },
+    {
+      "name": "雾面肌",
+      "skin_type_id": 64807,
+      "configPath": "skin/64807.json",
+      "configPath_high": "skin/64807_high.json"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+material Texture
+{
+	renderState 
+	{
+		depthTest = false 
+		blend = false 
+		blendSrc = ZERO
+		blendDst = ONE
+	}
+	technique 
+	{
+		pass 
+		{
+			resourcePath = true
+			vertexShader = shaders/texture.vert
+			fragmentShader = shaders/texture.frag
+		}
+	}
+}

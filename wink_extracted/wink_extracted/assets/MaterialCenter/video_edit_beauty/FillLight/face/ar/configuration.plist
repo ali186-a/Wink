@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string></string>
+			<key>AI</key>
+			<array>
+				<string>ai/configuration.json</string>
+			</array>
+			<key>CustomParamDict</key>
+			<dict>
+				<key>EyelidRealtimeModelType</key>
+				<integer>-1</integer>
+			</dict>
+			<key>IsNeedResetSound</key>
+			<integer>0</integer>
+			<key>EnableReplaceSpecialFacelift</key>
+			<integer>0</integer>
+			<key>FacePart</key>
+			<array>
+				<dict>
+					<key>PacketPath</key>
+					<string>light</string>
+					<key>ScriptPath</key>
+					<string>light/facelight.lua</string>
+					<key>UIPath</key>
+					<string>light/facelight_ui.lua</string>
+					<key>Type</key>
+					<string>Script</string>
+					<!-- <key>EnableTouch</key>
+					<integer>1</integer> -->
+					<key>EnableFace</key>
+					<integer>1</integer>
+					<key>EnableFace3DFA</key>
+					<integer>1</integer>
+					<key>EnableFace3DFAMesh</key>
+					<integer>1</integer>
+					<key>ID</key>
+					<string>105553147509824</string>
+					<key>Name</key>
+					<string></string>
+					<key>ParamTableType</key>
+					<string>MVAR</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</plist>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>FacePart</key>
+		<array>
+			<dict>
+				<key>enableCallback</key>
+				<integer>0</integer>
+				<key>isHeadAfterLeg</key>
+				<integer>1</integer>
+				<key>state</key>
+				<integer>3</integer>
+				<key>ModeTypeSwitch</key>
+				<string>0022120202</string>
+				<key>waistRadius</key>
+				<real>0.8</real>
+				<key>waistDegree</key>
+				<real>1</real>
+				<key>FootDegree</key>
+				<real>1</real>
+				<key>handDegree</key>
+				<real>0.18</real>
+				<key>BellyDegree</key>
+				<real>1.5</real>
+				<key>Type</key>
+				<string>SlimV2</string>
+				<key>lengthenBodyParameters</key>
+				<string>1,1.255,1,1.255,1,1,1,1</string>
+				<key>LegDegree</key>
+				<string>1.0</string>
+				<key>ChestDegree</key>
+				<string>1.4</string>
+				<key>HipDegree</key>
+				<string>1.0</string>
+				<key>ShoulderDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimDegree</key>
+				<string>0.0</string>
+				<key>DefaultsShrinkHeadDegree</key>
+				<string>0.0</string>
+				<key>DefaultsLengthenDegree</key>
+				<string>1.0</string>
+				<key>DefaultsSlimHandDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimWaistDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimLegDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimChestDegree</key>
+				<string>1.0</string>
+				<key>DefaultsSlimHipDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimShoulderDegree</key>
+				<string>0.0</string>
+				<key>DefaultsSlimBellyDegree</key>
+				<string>0.0</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

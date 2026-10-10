@@ -1,0 +1,14 @@
+{
+    "defaultTime":3000,
+    "maxDuration":3000,
+    "minDuration":3000,
+    "SmallFace":0.35,
+    "BigEyes":0.62,
+    "NarrowFace":0.12,
+    "ShortFace":0.0,
+    "ThinNose":0.60,
+    "Chin":0.65,
+    "MouthShape":0.5,
+    "Forehead":0.5,
+    "Cheekbone":0.5
+}

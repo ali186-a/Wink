@@ -1,0 +1,16 @@
+{
+    "modules": [
+        {
+            "category": "Light_photo",
+            "name": "LuaPointLightP",
+            "path": "modules/Light_photo/LuaPointLightP/1.0.0.0/LuaPointLightP.json",
+            "version": "1.0.0.0"
+        },
+        {
+            "category": "Output",
+            "name": "LuaScreen",
+            "path": "modules/Output/LuaScreen/1.0.0.0/LuaScreen.json",
+            "version": "1.0.0.0"
+        }
+    ]
+}

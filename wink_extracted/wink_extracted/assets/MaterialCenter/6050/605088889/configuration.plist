@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>AR</key>
+            <string>ar</string>
+            <key>ARType</key>
+            <integer>0</integer>
+            <key>BeautyDegree</key>
+            <real>1</real>
+            <key>BubbleSize</key>
+            <string>750,166</string>
+            <key>CtrlType</key>
+            <integer>0</integer>
+            <key>FilterInfo</key>
+            <array>
+                <dict>
+                    <key>EffectExist</key>
+                    <false/>
+                    <key>OverAllDegree</key>
+                    <string>1.00</string>
+                    <key>SliderShow</key>
+                    <true/>
+                </dict>
+            </array>
+            <key>IgnoreFace</key>
+            <integer>1</integer>
+            <key>IsNeedResetBGM</key>
+            <integer>0</integer>
+            <key>MakeupDegree</key>
+            <real>1</real>
+            <key>SpecialFace</key>
+            <false/>
+            <key>SpecialStaticeMakeup</key>
+            <false/>
+            <key>TextFontKey</key>
+            <string>PingFangSCBold,PingFangSCBold</string>
+        </dict>
+    </array>
+</plist>

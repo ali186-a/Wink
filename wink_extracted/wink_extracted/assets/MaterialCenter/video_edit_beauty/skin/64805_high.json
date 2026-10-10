@@ -1,0 +1,76 @@
+[
+    {
+        "name": "conceal",
+        "value": 0.75,
+        "platform": {
+            "default": 1,
+            "ios": 1,
+            "android": 1
+        },
+        "params": [
+            {
+                "param": "dodgeBurnAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "flawBrightenAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "flawDarkenAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "laughLineAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "laughLineNewAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "removePouchAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "tearTroughAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "skinCleanAlpha",
+                "coefficient": 0.5
+            }
+        ]
+    },
+    {
+        "name": "highlight",
+        "value": 0.6,
+        "platform": {
+            "default": 0.43,
+            "ios": 0.43,
+            "android": 0.43
+        },
+        "params": [
+            {
+                "param": "shadowLightAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "shadowSmoothAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "dullnessRemoveAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "blueFaceLightenAlpha",
+                "coefficient": 1
+            },
+            {
+                "param": "rednessLightenAlpha",
+                "coefficient": 1
+            }
+        ]
+    }
+]

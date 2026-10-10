@@ -1,0 +1,139 @@
+{
+    "centerPoint": {
+        "x": -225.0,
+        "y": 124.0
+    },
+    "dataList": [],
+    "nodeList": [
+        {
+            "id": 1,
+            "module": "LuaScreen",
+            "version": "1.0.0.0",
+            "posX": 0,
+            "posY": 0,
+            "paramTable": [
+                {
+                    "param": "bp_setDepthScale",
+                    "dataType": "float",
+                    "value": 10.0
+                },
+                {
+                    "param": "bp_setEnvColor",
+                    "dataType": "vecf",
+                    "value": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "param": "bp_setLightA",
+                    "dataType": "LuaLightP",
+                    "value": null
+                },
+                {
+                    "param": "bp_setLightB",
+                    "dataType": "LuaLightP",
+                    "value": null
+                },
+                {
+                    "param": "bp_setLightC",
+                    "dataType": "LuaLightP",
+                    "value": null
+                },
+                {
+                    "param": "bp_setLightD",
+                    "dataType": "LuaLightP",
+                    "value": null
+                },
+                {
+                    "param": "bp_setLightE",
+                    "dataType": "LuaLightP",
+                    "value": null
+                },
+                {
+                    "param": "bp_setBlendType",
+                    "dataType": "string",
+                    "value": "LightBlend"
+                },
+                {
+                    "param": "bp_setShowType",
+                    "dataType": "string",
+                    "value": "default"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "module": "LuaPointLightP",
+            "version": "1.0.0.0",
+            "posX": -402,
+            "posY": 115,
+            "paramTable": [
+                {
+                    "param": "bp_setLightPosX",
+                    "dataType": "float",
+                    "value": 0.0
+                },
+                {
+                    "param": "bp_setLightPosY",
+                    "dataType": "float",
+                    "value": 0.0
+                },
+                {
+                    "param": "bp_setLightPosZ",
+                    "dataType": "float",
+                    "value": -5.0
+                },
+                {
+                    "param": "bp_setColorVal",
+                    "dataType": "vecf",
+                    "value": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "param": "bp_setRoughness",
+                    "dataType": "float",
+                    "value": 0.73
+                },
+                {
+                    "param": "bp_setMetallic",
+                    "dataType": "float",
+                    "value": 0.14
+                },
+                {
+                    "param": "bp_setRadius",
+                    "dataType": "float",
+                    "value": 10.0
+                },
+                {
+                    "param": "bp_setLightStrong",
+                    "dataType": "float",
+                    "value": 0.5
+                },
+                {
+                    "param": "bp_setEffectType",
+                    "dataType": "string",
+                    "value": "ALL"
+                }
+            ]
+        }
+    ],
+    "relations": [
+        {
+            "source_id": 2,
+            "module": "LuaPointLightP",
+            "param": "bp_getLight",
+            "target": [
+                {
+                    "source_id": 1,
+                    "param": "bp_setLightA",
+                    "module": "LuaScreen"
+                }
+            ]
+        }
+    ]
+}

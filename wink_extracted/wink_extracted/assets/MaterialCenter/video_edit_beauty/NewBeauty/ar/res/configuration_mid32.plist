@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>ID</key>
+    <integer>1001</integer>
+    <key>FilterPart</key>
+    <array>
+        <dict>
+            <key>Type</key>
+            <string>AnattaBeauty</string>
+            <key>Filters</key>
+            <array>
+                <dict>
+                    <key>Name</key>
+                    <string>SourceInput</string>
+                </dict>
+                <!-- 匀肤 低端机建议用祛斑祛痘替代 -->
+                <dict>
+                    <key>Name</key>
+                    <string>DodgeBurnVideo</string>
+                    <!-- 匀肤效果类型 0-最佳 1-修图 2-实时 3-fast 4-realtime_wink-->
+                    <key>Type</key>
+                    <string>4</string>
+                    <!-- 匀肤设备类型 -1-none 0-cpu 1-gl 2-coreml -->
+                    <key>DeviceType</key>
+                    <string>1</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>SourceInput</string>
+                    </array>
+                </dict>
+                <!-- 手动祛斑祛痘 -->
+                <dict>
+                    <key>Name</key>
+                    <string>AcneCleanManual</string>
+                    <!-- 是否必须额头点 -->
+                    <key>IsNeedHeadPoints</key>
+                    <string>1</string>
+                    <!-- 是否必须全脸分割 -->
+                    <key>IsNeedFullSegment</key>
+                    <string>1</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>DodgeBurnVideo</string>
+                    </array>
+                </dict>
+                <!-- 中性灰缩毛孔 -->
+                <dict>
+                    <key>Name</key>
+                    <string>FlawSmooth</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>AcneCleanManual</string>
+                    </array>
+                </dict>
+                <!-- 妆容加深-->
+                <dict>
+                    <key>Name</key>
+                    <string>FaceSharpen</string>
+                    <key>Type</key>
+                    <string>Video</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>FlawSmooth</string>
+                    </array>
+                </dict>
+                <!-- 去油光 -->
+                <dict>
+                    <key>Name</key>
+                    <string>CleanShiny</string>
+                    <key>Type</key>
+                    <string>Video</string>
+                    <key>maskOffset</key>
+                    <string>5.0</string>
+                    <key>matteOffset</key>
+                    <string>4.0</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>FaceSharpen</string>
+                    </array>
+                </dict>
+                <!-- 手动去油光 -->
+                <dict>
+                    <key>Name</key>
+                    <string>CleanShinyManual</string>
+					<key>IsNeedHeadPoints</key>
+					<string>1</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>CleanShiny</string>
+                    </array>
+                </dict>
+                <!-- 面部丰盈 -->
+                <dict>
+                    <key>Name</key>
+                    <string>CheekFillers</string>
+                    <key>Type</key>
+                    <string>VideoAddedArea</string>
+                    <key>WithHeadPoint</key>
+                    <string>1</string>
+                    <key>WithFaceParsingMask</key>
+                    <string>1</string>
+                    <key>SkinToneCorrectionType</key>
+                    <string>1</string>
+                    <key>IsMiniFaceLimit</key>
+                    <string>1</string>
+                    <key>WithSplitArea</key>
+                    <string>1</string>
+                    <key>IsNeedFaceDarkAlpha</key>
+                    <string>1</string>
+                    <!-- 肤色矫正类型 -->
+                    <key>SkinToneCorrectionType</key>
+                    <!-- 1:去青去暗沉  2:仅去红 -->
+                    <string>1</string>
+                    <!-- 绘制网格类型 -->
+                    <key>ShadowSmoothMeshType</key>
+                    <string>8</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>CleanShinyManual</string>
+                    </array>
+                </dict>
+                <!-- 面部提亮 -->
+                <dict>
+                    <key>Name</key>
+                    <string>ShadowSmoothBright</string>
+                    <key>IsMiniFaceLimit</key>
+                    <string>0</string>
+                    <key>IsNeedShadowLightDarkAlpha</key>
+                    <string>1</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>CheekFillers</string>
+                    </array>
+                </dict>
+                <!-- 祛眼袋 -->
+                <dict>
+					<key>Name</key>
+					<string>PuffinessReducer</string>
+					<key>SkinToneCorrectionType</key>
+					<string>2</string>
+					<key>IsNeedShadowLightDarkAlpha</key>
+					<string>1</string>
+					<key>IsNeedWholeFaceMask</key>
+					<string>1</string>
+					<key>FromSource</key>
+					<array>
+						<string>ShadowSmoothBright</string>
+					</array>
+				</dict>
+                <!-- 手动黑眼圈 -->
+                <dict>
+					<key>Name</key>
+					<string>EyePouchManual</string>
+					<key>FromSource</key>
+					<array>
+						<string>PuffinessReducer</string>
+					</array>
+				</dict>
+                <!-- 美白 -->
+                <dict>
+                    <key>Name</key>
+                    <string>FaceColor</string>
+                    <key>Type</key>
+                    <string>SingleLookup</string>
+                    <key>LutPath</key>
+                    <string>Anatta/lookup_table_512_white.png</string>
+                    <key>Size</key>
+                    <string>64</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>EyePouchManual</string>
+                    </array>
+                </dict>
+                <!-- 磨皮 -->
+                <dict>
+                    <key>Name</key>
+                    <string>SkinSmooth</string>
+                    <key>Type</key>
+                    <string>Video</string>
+                    <key>ContourMaskMeshType</key>
+                    <string>8</string>
+                    <key>IsNeedFaceAndNeckMask</key>
+                    <string>1</string>
+                    <key>FaceEdgeDevelop</key>
+                    <string>0</string>
+                    <key>IsNeedCropFace</key>
+                    <string>1</string>
+                    <key>WithHeadPoint</key>
+                    <string>1</string>
+                    <key>WithFaceParsingMask</key>
+                    <string>1</string>
+                    <key>IsNeedSkinMask</key>
+					<string>0</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>FaceColor</string>
+                    </array>
+                </dict>
+                <dict>
+                    <key>Name</key>
+                    <string>SkinSmoothManual</string>
+                    <key>Type</key>
+                    <string>Enhance</string>
+                    <!-- 是否必须额头点 -->
+                    <key>IsNeedHeadPoints</key>
+                    <string>1</string>
+                    <!-- 是否必须全脸分割 -->
+                    <key>IsNeedFullSegment</key>
+                    <string>1</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>SkinSmooth</string>
+                    </array>
+                </dict>
+                <!-- 清晰 -->
+                <dict>
+                    <key>Name</key>
+                    <string>Sharpen</string>
+                    <key>Type</key>
+                    <string>MySharpenSkinMask</string>
+                    <key>FaceEdgeDevelop</key>
+                    <string>0</string>
+                    <key>ExceptFaceSkin</key>
+                    <string>0</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>SkinSmoothManual</string>
+                        <string>FaceColor</string>
+                    </array>
+                </dict>
+                <!-- 亮眼 -->
+                <dict>
+                    <key>Name</key>
+                    <string>BrightEye</string>
+                    <key>Type</key>
+                    <string>VideoPupil</string>
+                    <!-- 眼部精修-细节 -->
+                    <key>NewSharpenEye</key>
+                    <string>1</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>Sharpen</string>
+                    </array>
+                </dict>
+                <!-- 手动白牙 -->
+                <dict>
+                    <key>Name</key>
+                    <string>WhiteTeethManual</string>
+                    <!-- 是否必须额头点 -->
+                    <key>IsNeedHeadPoints</key>
+                    <string>0</string>
+                    <!-- 是否必须全脸分割 -->
+                    <key>IsNeedFullSegment</key>
+                    <string>1</string>
+                    <!-- 是否作用全脸 -->
+                    <key>IsWhiteWholeFace</key>
+                    <string>1</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>BrightEye</string>
+                    </array>
+                </dict>
+                <!-- 立体 + 皮肤纹理-->
+                <dict>
+                    <key>Name</key>
+                    <string>ShadowLight</string>
+                    <key>Type</key>
+                    <string>2DSoftLightTexture</string>
+                    <key>MaskPath</key>
+                    <string>SoftLight2D/SoftLight.png</string>
+                    <key>TextureBlendAlpha</key>
+                    <string>0.0</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>WhiteTeethManual</string>
+                    </array>
+                </dict>
+                <!-- 25D立体、仅应用高光 -->
+				<dict>
+                    <key>Name</key>
+                    <string>ShadowLight2</string>
+                    <key>Type</key>
+                    <string>2.5DLightNew</string>
+                    <key>ShadowAlpha</key>
+                    <string>0.0</string>
+					<key>IsNeedFaceTexture</key>
+					<string>0</string>
+                    <key>IsNeed25DFunc</key>
+                    <string>0</string>
+                    <key>ApplySceneType</key>
+                    <string>1</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>ShadowLight</string>
+                    </array>
+                </dict>
+                <dict>
+                    <key>Name</key>
+                    <string>ResultOutput</string>
+                    <key>FromSource</key>
+                    <array>
+                        <string>ShadowLight2</string>
+                    </array>
+                </dict>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>
